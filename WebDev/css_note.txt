@@ -1,0 +1,321 @@
+1. Margin add space outside the element while padding add space inside the element
+2. padding  : top right bottom left,  tb, lr
+3. background-image:""; //always make the image bigger than you want it to be
+4. background-size: 100%; //always 100 percent of the width
+5. background-position: center; //focus on centre as the image resize (responsive design)
+6. background-size: 300px //set the image size
+7. background-repeat: no-repeat;
+8. top: -40px // start from -40 px
+9. position:relative adjust the box relative to the guys i'm sitting in line with
+10. fig->figcaption
+11.   color: red;
+        font-family: courier;
+        font-size: 160%;
+12.
+The CSS border property defines a border around an HTML element:
+p {
+  border: 1px solid powderblue;
+}
+
+13. margin-space outside border
+    padding -space within border
+
+14.p {
+  border: 1px solid powderblue;
+  padding-top: 30px;
+} a very nice example
+
+15.p {
+  border: 1px solid powderblue;
+  margin-top: 50px;
+} same as above
+
+19.text-decoration:none remove underline
+
+20. Actually every elment kind of acts like a box.You can user border: 1px solid blue to observe
+
+21.Therefore,A link can also be styled as a button, by using CSS:
+
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+23.A background image can be specified on almost any HTML element.
+
+body {
+  background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+    background-attachment: fixed;  
+  background-size: cover; // cover-with no stretching
+  background-size: 100% 100%; //cover-with stretching
+}
+
+24.Horizontal list-navigation pane
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+
+24. float - float around right/left of its container
+          -in that area other things will start from the side of the floated object
+    clear - clear the float status
+
+
+25. Responsive  1vw=1percent of viewport width. It seems 1 letter 1percent
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+
+<h1 style="font-size:10vw;">Responsive Text</h1>
+
+<p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+<p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+</body>
+</html>
+
+
+26. opacity of an element
+opacity: 0.3; 
+
+27.background-position: right top;
+    background-origin: content-box/padding-box/border-box
+    background-attachement:fixed/scroll;
+
+28. width:100%: take its size of its container +padding+margin 
+    width:auto  take its size of its container -padding-margin 
+
+29. margin:auto 
+You can set the margin property to auto to horizontally center the element within its container. 
+The element will then take up the specified width,and the remaining space will be split equally between the 
+left and right margins:
+
+30. padding will add to the specified witdh of the element making it the elemnt wider than its specified width.
+  can use box-sizing:border-box to solve
+
+31. image can use vertical align
+
+vertical-align: top/middle/bottom;
+
+32.text-decoration used to remove underline from link
+or do underline/linethrough
+
+33. text-transform:uppercase/lowercase/capitalize
+
+34. text properties
+
+text-indent: 50px;//two space at the start of paragraph
+letter-spacing: 3px;
+line-height: 1.8;
+word-spacing: -5px;
+white-space: nowrap;
+
+35.
+font-size: 2.5em 
+em is the current font size
+
+36.A block-level element always starts on a new line and takes up the full width
+ available (stretches out to the left and right as far as it can).
+ <div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+
+An inline element does not start on a new line and only takes up as much width as necessary.
+<span>
+<a>
+<img>
+
+37.Hiding an element can be done by setting the display property to none. 
+The element will be hidden, and the page will be displayed as if the element is not there:
+
+visibility:hidden; also hides an element.
+
+However, the element will still take up the same space as before. The element will be hidden, 
+but still affect the layout:
+
+38.The list-style-type:none property can also be used to remove the markers/bullets. 
+Note that the list also has default margin and padding. 
+To remove this, add margin:0 and padding:0 to <ul> or <ol>:
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+39.max-width will resize when the browser is smaller than max-width
+  while width no
+
+40.position
+
+static:normal flow of the code
+relative: relative to its normal position
+fixed:relative to the viewport
+absolute:An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: A "positioned" element is one whose position is anything except static.
+
+sticky:An element with position: sticky; is positioned based on the user's scroll position.
+
+z-index: higher placed infront
+
+41.align image center
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+  centre vertically in a box
+
+padding method
+
+.center {
+  padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;
+}
+
+line-height
+
+.center {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+element element	div p	Selects all <p> elements inside <div> elements
+element>element	div > p	Selects all <p> elements where the parent is a <div> element
+element+element	div + p	Selects all <p> elements that are placed immediately after <div> elements
+element1~element2	p ~ ul	Selects every <ul> element that are preceded by a <p> element
+
+42.
+A pseudo-class is used to define a special state of an element.
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+
+43.
+A CSS pseudo-element is used to style specified parts of an elemen
+h1::before {
+  content: url(smiley.gif);
+}
+
+44.block element takes up 100% width. but floated block will resize according to its content.
+
+45. Because floated element are taken out of the normal document flow and takes up no space. Therefore, if the child
+elements are floated, the parent element will be collapsed.
+
+46. Two ways to handle this problem
+i) overflow:hidden
+ii) ul:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+47.horizontal fixed top
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+48. border divider
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+49. Rules with higher specificity has higher priority
+
+50. The pseudo-element is added within the element at the end of the element. Not outside the element.
+
+51.
+pre {
+  white-space: pre-wrap;
+}
+
+52. bottom: the position of the object from bottom of its container. 10px=10px from bottom 100%=start from top of 
+    containter
+    So does top,left,right

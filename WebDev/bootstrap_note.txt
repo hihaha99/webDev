@@ -1,0 +1,12 @@
+1. bootstrap allows 12 column layout
+2.xs (for phones - screens less than 768px wide)
+    sm (for tablets - screens equal to or greater than 768px wide)
+    md (for small laptops - screens equal to or greater than 992px wide)
+    lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+3. <div class="row">
+        <div class="col-sm-4">.col-sm-4</div>
+        ##means if webpage>=sm-size, it will takes 4 columns; if webpage<sm,take 12 columns (full)
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+    </div>
+

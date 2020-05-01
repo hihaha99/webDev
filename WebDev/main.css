@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    margin-top:0;
+    font-family: arial;
+    background-attachment: fixed;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size:200px 200px;
+    margin-left:210px;
+    margin-bottom:0px;
+}
+
+body.RNG{
+  background:url("https://cdn1.dotesports.com/wp-content/uploads/2018/08/11095313/c55eb912-0c91-4d9d-a228-b26b6f12fc4b.jpg") center fixed no-repeat;
+  background-size:cover;
+  background-color: rgba(255,255,255,0.5);
+  background-blend-mode: lighten;
+}
+
+  h1
+  {
+    padding:20px;
+  }
+
+  .vertical li
+  {
+    text-align: center;
+  }
+  .vertical ul {
+    position:fixed;
+    left:0px;
+    height:100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+  
+  .vertical ul a {
+    display: block;
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  .vertical ul a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .vertical .dropdown {
+    padding:8px 16px;
+    position: relative;
+  }
+  
+  .vertical .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99999 !important;
+  }
+  
+  .vertical .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.icon{
+    max-height: 200px;
+    max-width: 200px;
+    height:100%;
+    float: right;
+    vertical-align: top;
+}
+
+.icon:hover{
+  transform:rotate(20deg);
+}
+
+.content:after
+{
+  clear:right;
+}
+
+.end
+{
+  clear:both;
+}
+pre {
+  font-size: large;
+  mix-blend-mode: difference;
+  white-space: pre-wrap;
+}
+
+footer{
+    width:100%;
+    margin-left:-10px;
+    padding: 10px 0 0 0;
+    text-align: center;
+    color:white;
+    background: grey;
+    margin-bottom:0px;
+}
